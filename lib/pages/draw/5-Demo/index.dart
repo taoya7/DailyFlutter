@@ -44,7 +44,9 @@ class Draw1 extends CustomPainter{
     _path.moveTo(0, 0);
     _path.lineTo(size.width, 0);
     _path.lineTo(size.width, size.height);
-    _path.quadraticBezierTo(size.width, size.height,size.width*0.3, size.height*0.5 );
+    // _path.quadraticBezierTo(size.width*0.8, size.height*0.8, size.width*0.3, size.height*0.5 );
+    _path.cubicTo(size.width*0.8, size.height*0.8, size.width*0.5, size.height*0.5, size.width*0.4, size.height*0.8 );
+    _path.relativeQuadraticBezierTo(30,1, 1,2);
     _path.lineTo(0, size.height*0.5);
     _path.close();
     canvas.drawPath(_path, _paint);

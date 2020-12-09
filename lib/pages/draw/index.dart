@@ -1,9 +1,11 @@
-import 'package:Learn/pages/draw/0-start/index.dart';
-import 'package:Learn/pages/draw/1-wave/index.dart';
-import 'package:Learn/pages/draw/3-canvas/index.dart';
-import 'package:Learn/pages/draw/4-draw/index.dart';
-import 'package:Learn/pages/draw/5-Demo/index.dart';
+import '0-start/index.dart';
+import '1-wave/index.dart';
+import '3-canvas/index.dart';
+import '4-draw/index.dart';
+import '5-Demo/index.dart';
+import '6-path/index.dart';
 import 'package:flutter/material.dart';
+
 
 
 class DrawView extends StatelessWidget {
@@ -49,12 +51,22 @@ class DrawView extends StatelessWidget {
           ),
 
 
+
+
           RaisedButton(onPressed: (){
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context)=> Demo5())
             );
           },
             child: Text('UI-路径️'),
+          ),
+
+          RaisedButton(onPressed: (){
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context)=> PathDemo())
+            );
+          },
+            child: Text('6-认识一下Path吧'),
           ),
 
 

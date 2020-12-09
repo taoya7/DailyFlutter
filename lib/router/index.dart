@@ -5,6 +5,7 @@ import 'package:Learn/pages/google/14-ListWheelScrollView/index.dart';
 import 'package:Learn/pages/google/15-sliver/index.dart';
 import 'package:Learn/pages/google/index.dart';
 import 'package:Learn/pages/interaction/index.dart';
+import 'package:Learn/pages/scroll/index.dart';
 import 'package:Learn/pages/ui/index.dart';
 
 import 'package:fluro/fluro.dart';
@@ -54,6 +55,7 @@ class Routers {
     router.define('/draw', handler: Handler(handlerFunc: (ctx, params)=>DrawView()));
     router.define('/interaction', handler: Handler(handlerFunc: (ctx, params)=>InteractionView()));
     router.define('/animation', handler: Handler(handlerFunc: (ctx, params)=>AnimationHome()));
+    router.define('/scroll', handler: Handler(handlerFunc: (ctx, params)=>ScrollIndex()));
 
     // 没有匹配到
     router.notFoundHandler = Handler(handlerFunc: (ctx, params)=>Global404());

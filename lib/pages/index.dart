@@ -17,7 +17,6 @@ class Home extends StatelessWidget {
       "title": 'UI',
       'to': '/ui'
     },
-
     {
       "title": '与原生交互',
       "to": '/interaction'
@@ -29,6 +28,10 @@ class Home extends StatelessWidget {
     {
       "title": '动画',
       "to": "/animation"
+    },
+    {
+      "title": '滚动系列',
+      "to": '/scroll'
     }
   ];
   @override
